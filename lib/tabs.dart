@@ -27,8 +27,19 @@ class _TabsState extends State<Tabs> with SingleTickerProviderStateMixin {
 
   Widget build(BuildContext context) {
     print("Word check"+word);
-    return 
-       Column(
+    return Scaffold(
+      appBar: AppBar(
+        title : Text('Meaning',
+        style: TextStyle(
+            // backgroundColor: Colors.black,
+            fontFamily: "Pangolin",
+            fontSize: 35,
+
+          )
+        ),
+        centerTitle: true,
+      ),
+      body : ListView(
         children:<Widget>[
           TabBar(
             controller: _tabController,
@@ -43,14 +54,13 @@ class _TabsState extends State<Tabs> with SingleTickerProviderStateMixin {
             ),           
             Container(
              color: Colors.white,
-             height: 500,
+             height: MediaQuery.of(context).size.height,
               child: 
              TabBarView(
               controller: _tabController,
             children: <Widget>[
               Tab1(),
               Tab2()
-              
             ],
           ) ,
             )
@@ -66,8 +76,8 @@ class _TabsState extends State<Tabs> with SingleTickerProviderStateMixin {
           //   ), )
             
           ]
-        ); 
+        ) 
       
-    //);
+    );
   }
 }

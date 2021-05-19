@@ -130,17 +130,18 @@ class _HomeState extends State<Home> {
           )
         ),
         onPressed: ()=>{ 
-          setState(() {
-           Tab1();
-      })
-          //Tab1(),
-      //     Services.getUsers().then((value) =>  setState(() {
-      //      Tab1();
-      // }))
+        
+            Navigator.push(
+                context,
+                  MaterialPageRoute(builder: (context) => Tabs()),
+  
+            )
+      
+     
         },
            )
          ) ),
-         Tabs()
+         
         //  Container(
         //    height: 200,
         //    width: MediaQuery.of(context).size.width,

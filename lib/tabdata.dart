@@ -11,24 +11,15 @@ class Tab1 extends StatefulWidget {
 }
 
 class _Tab1State extends State<Tab1> {
-  
-  List<Dictionary> _users;
-  void callapi(){
-  Services.getUsers().then((users) => setState(() {
-        _users = users;
-        // _loading = false;
-  }));
-
-}
-  // bool _loading;
+   bool iswidget =false;
+   List<Dictionary> _users;
   @override
   void initState() {
     super.initState();
-    // _loading = true;
     Services.getUsers().then((users) {
       setState(() {
         _users = users;
-        // _loading = false;
+        iswidget = true;
       });
     });
   }
@@ -37,7 +28,7 @@ class _Tab1State extends State<Tab1> {
   Widget build(BuildContext context) {
     print("WORD"+word);
      Dictionary user = _users[0];
-     return FutureBuilder(
+     return iswidget?FutureBuilder(
        builder: (context,snapshot){
          if(snapshot.connectionState == ConnectionState.done){
            if(snapshot.hasError){
@@ -61,22 +52,22 @@ class _Tab1State extends State<Tab1> {
               title: Text(mean[index].definitions[0].definition
               , style: TextStyle(
                 color: Colors.white,
-              ),),
+                ),
+              ),
             );
           },
         ),
       );
            }
-           
-
-
          }
          return Center(
              child: CircularProgressIndicator(),
            );
        },
        future: Services.getUsers(),
-     );
+     ):  Center(
+             child: CircularProgressIndicator(),
+           );
     // return  Container(
     //     color: Colors.black,
         
@@ -96,6 +87,7 @@ class _Tab1State extends State<Tab1> {
     //       },
     //     ),
     //   );
+    
   }
 }
 
