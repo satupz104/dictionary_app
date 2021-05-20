@@ -91,7 +91,7 @@ class _NewTabState extends State<NewTab> {
                                 style: TextStyle(
                                   color: Colors.white,
                                 ),
-                              ): Text('Sorry , No example available for $word',
+                              ): Text('',
                               style: TextStyle(
                                   color: Colors.white,
                                 ),
