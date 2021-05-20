@@ -21,7 +21,7 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 flutter_icons:
-    image_path: "images/dictionary-30.png"
+    image_path: "assets/dictionary30.png"
     android: true
     ios: true
 

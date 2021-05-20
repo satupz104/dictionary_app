@@ -2,7 +2,7 @@
     package="com.example.dictionary_app">
    <application
         android:label="dictionary_app"
-        android:icon="@mipmap/dictionary-30">
+        android:icon="@mipmap/dictionary30">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"

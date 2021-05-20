@@ -19,7 +19,7 @@ class _MyDrawerState extends State<MyDrawer> {
               child: Column(
                 children: <Widget>[
                   Container(
-                    child: Image.asset('assets/dictionary-30.png'),
+                    child: Image.asset('assets/dictionary30.png'),
                     height: 150
                   ),
                   SizedBox(height:20),
