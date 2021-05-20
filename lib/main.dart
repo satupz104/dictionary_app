@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'mysplash.dart';
 
-void main() {
+void main(){
   runApp(MyApp());
 }
 

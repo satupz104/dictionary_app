@@ -1,33 +1,29 @@
 import 'package:http/http.dart' as http;
 import 'Dictionary.dart';
 import 'package:dictionary_app/home.dart';
-final urlStr = 'hello';
-
+import 'dart:async';
+bool error = false;
 class Services {
-  // //
-  // if(word ==''){
-  // word=urlStr;
-  // }
-  
-
  
   static Future<List<Dictionary>> getUsers() async {
-      final  url = 'https://api.dictionaryapi.dev/api/v2/entries/en_US/$word';
+      
     try {
-      print(url);
+      var  url = 'https://api.dictionaryapi.dev/api/v2/entries/en_US/$word';
       final response = await http.get(Uri.parse(url));
       print(response.statusCode);
-
+      print(url);
+      print(word);
       if (200 == response.statusCode) {
-        final List<Dictionary> users = dictionaryFromJson(response.body);
-       
+        error = false;
+         final List<Dictionary> users = dictionaryFromJson(response.body);
         return users;
-      } else {
-        return List<Dictionary>();
+      } 
+      else {
+        error =true;
+        return <Dictionary>[];
       }
     } catch (e) {
-      print('Insidew =catch');
-      return List<Dictionary>();
+      return <Dictionary>[];
     }
   }
 }
