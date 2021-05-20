@@ -19,7 +19,7 @@ class _MySplashState extends State<MySplash> {
         fontSize: 30,
         color: Colors.black
         )),
-        image: Image.asset('assets/dictionary-30.png'),
+        image: Image.asset('assets/dictionary30.png'),
         photoSize: 50.0,
         backgroundColor: Colors.white,
         loaderColor: Colors.black,
