@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'developers.dart';
+import 'disclaimer.dart';
 
 class MyDrawer extends StatefulWidget {
   @override
@@ -31,8 +33,6 @@ class _MyDrawerState extends State<MyDrawer> {
 
           )
         ),
-
-                  
                 ],
 
               ),
@@ -40,18 +40,6 @@ class _MyDrawerState extends State<MyDrawer> {
             SizedBox(
               height: 10,
             ),
-            ListTile(
-              leading: Icon(
-                Icons.home_outlined
-              ),
-              title: Text("Home",
-              
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.w300,
-              )),
-              
-           ),
             ListTile(
               leading: Icon(
                 Icons.label_important_outline
@@ -62,7 +50,13 @@ class _MyDrawerState extends State<MyDrawer> {
                 fontSize: 20,
                 fontWeight: FontWeight.w300,
               )),
+              onTap: ()=> {
+                Navigator.of(context).pop(),
+                Navigator.of(context).push(
+                new MaterialPageRoute(builder: (BuildContext context) => new Disclaimer())
               
+            ),
+              }
            ),
            ListTile(
               leading: Icon(
@@ -74,14 +68,18 @@ class _MyDrawerState extends State<MyDrawer> {
                 fontSize: 20,
                 fontWeight: FontWeight.w300,
               )),
-              
+              onTap: ()=> {
+                Navigator.of(context).pop(),
+                Navigator.of(context).push(
+                new MaterialPageRoute(builder: (BuildContext context) => new Developers())
+               ),
+              }
            ),
            ListTile(
               leading: Icon(
                 Icons.share_outlined
               ),
               title: Text("Share with friends",
-              
               style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.w300,
