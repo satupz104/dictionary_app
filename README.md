@@ -6,6 +6,8 @@ The free API used for meanings can be found here : https://dictionaryapi.dev/
 
 ## Some Screenshots of application in action
 
-![alt text](https://github.com/tushariiit/dictionary_app/blob/master/Screenshot_20210520_135550.jpg?raw=true)
+| <img src="https://github.com/tushariiit/dictionary_app/blob/master/Screenshot_20210520_135550.jpg" width="250"> | <img src="https://github.com/tushariiit/dictionary_app/blob/master/Screenshot_20210520_135714.jpg" width="250"> |
+
+
 
 
