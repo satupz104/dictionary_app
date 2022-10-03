@@ -1,16 +1,13 @@
-# dictionary_app
+# Dictionary App
 
-A new Flutter project.
+A Dictionary application made using Flutter.
 
-## Getting Started
+The free API used for meanings can be found here : https://dictionaryapi.dev/
 
-This project is a starting point for a Flutter application.
+## Some Screenshots of application in action
 
-A few resources to get you started if this is your first Flutter project:
+| <img src="https://github.com/tushariiit/dictionary_app/blob/master/Screenshot_20210520_135550.jpg" width="250"> | <img src="https://github.com/tushariiit/dictionary_app/blob/master/Screenshot_20210520_135714.jpg" width="250"> |  <img src="https://github.com/tushariiit/dictionary_app/blob/master/Screenshot_20210520_140026.jpg" width="250"> <img src="https://github.com/tushariiit/dictionary_app/blob/master/Screenshot_20210520_140047.jpg" width="250"> |
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
